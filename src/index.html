@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Yuki</title>
+  <style type="text/css">
+    h1 {
+      font-family: "Arial";
+      margin: 15px;
+      font-size: 60px;
+      border-bottom: 3px solid #2980B9;
+      padding-bottom: 3px;
+      font-weight: normal;
+    }
+
+    canvas {
+      border: 1px solid LightGrey;
+      margin: 15px;
+    }
+
+    img {
+      margin: 15px;
+    }
+
+    #drawings {
+      float: left;
+      border: 2px solid LightGrey;
+      margin: 15px;
+    }
+
+    #data {
+      clear: both;
+    }
+
+    table {
+      font-family: "Arial";
+      border: 2px solid #dddddd;
+      border-collapse: collapse;
+      width: 40%;
+      margin: 15px;
+      display: table;
+    }
+
+    td {
+      border: 0px solid #dddddd;
+      text-align: left;
+      margin: 8px;
+      padding: 7px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    #SVG {
+      font-family: "Arial";
+      font-size: 16px;
+      border: 0px;
+      padding-top: 12px;
+      padding-right: 30px;
+      padding-bottom: 12px;
+      padding-left: 30px;
+      margin: 15px;
+      background-color: #2980B9;
+      color: white;
+      text-decoration: none;
+      display: block;
+      float: left;
+      visibility: hidden;
+    }
+
+    #SVG:hover {
+      cursor: pointer;
+      background-color: #3e8dc0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Picture Evolution</h1>
+  <br>
+  <div id="drawings">
+    <canvas id="canvas"></canvas>
+    <img src="http://localhost:8000/yuki/target" alt="Target">
+  </div>
+  <div id="data">
+    <table id="table">
+      <col width="30%">
+      <col width="70%">
+      <tr>
+        <td>Generation</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Fitness</td>
+        <td>0</td>
+      </tr>
+    </table>
+  </div>
+
+  <a href="#" id="SVG">Download SVG</a>
+</body>
+<script src="/yuki/script.js"></script>
+
+</html>

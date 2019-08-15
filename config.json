@@ -1,0 +1,10 @@
+{
+	"imagepath":"monalisa.png",
+	"circleCount":50,
+	"minRadius":10,
+	"maxRadius":50,
+	"mutationAmount":0.2,
+	"mutationRate":0.01,
+	"backgroundColor": "black",
+	"minAlpha": 0
+}
